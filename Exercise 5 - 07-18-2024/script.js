@@ -10,7 +10,7 @@ time.addEventListener("keypress", (eve) => {
         countdown.textContent = time.value;
         timeKeeper.appendChild(countdown);
         nowTime = countdown.textContent;
-        countTime()
+        countTime();
     }
 
 });
@@ -20,16 +20,12 @@ intervalID = setInterval(() => {
     nowTime = nowTime - 1;
     countdown.textContent = nowTime;
     timeKeeper.appendChild(countdown);
-}, 1000);
-
-
-let checkTime = setInterval(() => {
-    if(nowTime === 0){
-        clearInterval(intervalID);
+    if(countdown.textContent === "0"){
         alert("Time's Up");
         console.log("Time's Up");
-        clearInterval(checkTime);
+        clearInterval(intervalID);
     }
-}, 100);
+}, 1000);
+
 
 }

@@ -1,0 +1,50 @@
+html {
+    background-color: #7750af;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(160deg, #7750af, #a388c9);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#MovieDetails {
+    display: flex;
+    gap: 2.5rem;
+    width: 80%;
+    margin-top: 100px;
+    background-color: #583b81;
+    border-radius: 15px;
+    padding: 3rem;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+}
+
+#Poster-Image {
+    border-radius: 10px;
+}
+
+#Movie-Title {
+    font: bold 2.5rem Verdana;
+    margin-bottom: 0;
+}
+
+#Release-date {
+    font: bold 1rem Verdana;
+}
+
+#Genre {
+    font: bold 1.3rem Verdana;
+}
+
+#Plot {
+    font: 1.1rem Verdana;
+}
+
+

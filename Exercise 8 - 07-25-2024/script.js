@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+
+// fs.watch fires twice for changes made using IDE editor. Notepad or something similar would be recommended
 fs.watch("command.txt", "utf-8", () => {
     fs.readFile("command.txt", "utf8", (err, data) => {
         if (err) {console.log(err)}
@@ -30,11 +32,8 @@ function handleCommands(data){
 }
 
 function createFile(data){
-    console.log(data);
     let dataList = data.split(" ");
-    console.log(dataList);
     let newFileName = dataList[dataList.length-1];
-    console.log(newFileName);
     fs.writeFile(`./${newFileName}`, "", (err) => {
         if (err) console.log(err);
         else console.log("File Created");

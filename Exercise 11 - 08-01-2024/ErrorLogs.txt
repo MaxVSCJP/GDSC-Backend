@@ -1,0 +1,7 @@
+
+    Error Message: ENOENT: no such file or directory, scandir 'C:\Users\maass.000\Documents\GitHub\GDSC-Backend\Exercise 11 - 08-01-2024\Number'
+    Error Location: undefined
+    Error Source: Directory Number
+    Time of Error: 8/10/2024 10:35:52 AM
+    
+    

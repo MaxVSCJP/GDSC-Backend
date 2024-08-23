@@ -1,0 +1,89 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-image: url("2nd Floor Library.jpeg");
+    background-size: cover;
+}
+
+
+#ButtonSelectors {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    margin-bottom: -100px;
+}
+
+#ButtonSelectors button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, saddlebrown, rosybrown);
+    padding: 10px;
+}
+
+#ButtonSelectors button:hover {
+    cursor: pointer;
+}
+
+.MainDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: auto;
+    width: 80vw;
+    min-height: 60vh;
+    border-radius: 8px;
+    padding: 24px;
+    color: white;
+    background: radial-gradient(rosybrown, saddlebrown);
+}
+
+.MainDisplay input {
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.MainDisplay button {
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.MainDisplay button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.MainDisplay {
+    display: none;
+}
+
+#SearchedBooksSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.SearchedBooks {
+    color: white;
+    font: bold 12px 'Roboto';
+    box-shadow: rgb(159, 99, 99) 0 0 5px 5px;
+    background-color:sienna;
+    border-radius: 4px;
+    width: 150px;
+    padding: 8px;
+    padding-bottom: 30px;
+}
+
+
